@@ -13,4 +13,6 @@
     <string name="venus">Venus</string>
     <string name="saturn">Saturn</string>
     <string name="result_message">Number of Correct Answers:</string>
+    <string name="try_again_message">Take another look at your answers and try again!</string>
+    <string name="expert_message">You\'re a Solar System Expert!</string>
 </resources>
