@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.eightfoldpath.solarsystemquiz.MainActivity">
+
+    <TextView
+        style="@style/QuestionStyle"
+        android:text="@string/question_moon" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_moon_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio_moon_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+
+    </RadioGroup>
+
+    <TextView
+        style="@style/QuestionStyle"
+        android:text="@string/question_third_planet" />
+
+    <EditText
+        android:id="@+id/third_planet_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/QuestionStyle"
+        android:text="@string/question_moons" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/mercury_moons"
+            android:text="@string/mercury"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/venus_moons"
+            android:text="@string/venus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/jupiter_moons"
+            android:text="@string/saturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/QuestionStyle"
+        android:text="@string/question_rings" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_mars_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mars" />
+
+        <RadioButton
+            android:id="@+id/radio_saturn_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saturn" />
+
+        <RadioButton
+            android:id="@+id/radio_uranus_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uranus" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="scoreQuiz"
+        android:text="@string/score_quiz" />
+
+    <TextView
+        android:id="@+id/quiz_result"
+        android:layout_marginTop="20dp"
+        style="@style/ResultStyle" />
+
+</LinearLayout>

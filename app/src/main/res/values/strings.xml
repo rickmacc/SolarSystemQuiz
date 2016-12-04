@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SolarSystemQuiz</string>
+    <string name="question_moon">Is the moon made of cheese?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="question_third_planet">What is the third planet from the Sun?</string>
+    <string name="question_moons">Which of the following planets have no moons?</string>
+    <string name="question_rings">Which planet has rings?</string>
+    <string name="score_quiz">Score Quiz</string>
+    <string name="mercury">Mercury</string>
+    <string name="mars">Mars</string>
+    <string name="uranus">Uranus</string>
+    <string name="venus">Venus</string>
+    <string name="saturn">Saturn</string>
+    <string name="result_message">Number of Correct Answers:</string>
+</resources>
